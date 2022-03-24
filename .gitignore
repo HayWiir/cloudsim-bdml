@@ -1,3 +1,4 @@
 *.class
 classes/
 *.csv
+settings.json

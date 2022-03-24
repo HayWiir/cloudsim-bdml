@@ -49,7 +49,7 @@ public class GreedinessExample {
 	private static boolean record = true;
 
 	/** path to the python binary on your system */
-	private static String pythonPath = "python src\\main\\resources\\python\\";
+	private static String pythonPath = "python resources/python\\";
 
 	/**
 	 * Creates main() to run this example.
@@ -121,13 +121,13 @@ public class GreedinessExample {
 			long outputSize = 300;
 
 			Cloudlet cloudlet = new RdaCloudlet(1, pesNumber, fileSize,
-					outputSize, "src\\main\\resources\\input1.csv", record);
+					outputSize, "resources/input1.csv", record);
 			cloudlet.setUserId(brokerId);
 			cloudlet.setVmId(0);
 			cloudletList.add(cloudlet);
 
 			cloudlet = new RdaCloudlet(2, pesNumber, fileSize, outputSize,
-					"src\\main\\resources\\input2.csv", record);
+					"resources/input2.csv", record);
 			cloudlet.setUserId(brokerId);
 			cloudlet.setVmId(1);
 			cloudletList.add(cloudlet);
